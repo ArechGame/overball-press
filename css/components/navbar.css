@@ -1,0 +1,105 @@
+/*=========================================================
+NAVBAR
+=========================================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+#navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    backdrop-filter:blur(14px);
+
+    background:rgba(11,15,23,.65);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.nav-container{
+
+    width:min(100% - 40px,var(--max-width));
+
+    margin:auto;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.nav-logo{
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    color:var(--primary);
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:36px;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    color:var(--text-light);
+
+    transition:.25s;
+
+}
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.25s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}

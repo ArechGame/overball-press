@@ -1,0 +1,40 @@
+/* =======================================================
+   GAME INFO
+======================================================= */
+
+.info-grid{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+
+.info-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:22px 30px;
+
+    border-radius:12px;
+
+    background:var(--surface);
+
+}
+
+
+.info-title{
+
+    font-weight:600;
+
+}
+
+
+.info-value{
+
+    color:var(--text-light);
+
+}

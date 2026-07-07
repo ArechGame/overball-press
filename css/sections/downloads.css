@@ -1,0 +1,37 @@
+/* =======================================================
+   DOWNLOADS
+======================================================= */
+
+.downloads-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+
+.download-card{
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.25s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+
+.download-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}

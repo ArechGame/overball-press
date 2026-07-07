@@ -1,0 +1,33 @@
+/* =======================================================
+   GALLERY
+======================================================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:25px;
+
+}
+
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
