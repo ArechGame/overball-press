@@ -1,37 +1,161 @@
-/* =======================================================
-   DOWNLOADS
-======================================================= */
+/*==================================================
+MEDIA CENTER
+==================================================*/
 
-.downloads-grid{
+.section-tag{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.8rem;
+
+    margin-bottom:10px;
+
+}
+
+.media-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 
-    gap:25px;
+    gap:28px;
+
+    margin-top:60px;
 
 }
 
+.media-card{
 
-.download-card{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:32px;
+
+    border-radius:var(--radius-medium);
 
     background:var(--surface);
 
-    border-radius:18px;
+    border:1px solid var(--border-color);
 
-    padding:35px;
+    transition:all var(--transition-normal);
 
-    transition:.25s;
-
-    border:1px solid rgba(255,255,255,.05);
+    box-shadow:var(--shadow-small);
 
 }
 
-
-.download-card:hover{
+.media-card:hover{
 
     transform:translateY(-8px);
 
     border-color:var(--primary);
+
+    box-shadow:
+
+        var(--shadow-medium),
+
+        0 0 25px rgba(0,217,255,.12);
+
+}
+
+.media-icon{
+
+    font-size:2.2rem;
+
+}
+
+.media-card span{
+
+    margin-top:auto;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.fact-sheet{
+
+    margin-top:90px;
+
+    padding:50px;
+
+    border-radius:var(--radius-large);
+
+    background:var(--surface);
+
+    border:1px solid var(--border-color);
+
+}
+
+.fact-sheet h3{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.fact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:28px;
+
+}
+
+.fact-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.fact-item span{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.fact-item strong{
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+}
+
+.fact-update{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    font-size:.9rem;
+
+    color:var(--text-light);
 
 }
