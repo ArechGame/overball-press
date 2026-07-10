@@ -1,3 +1,9 @@
+#trailer{
+
+    text-align:center;
+
+}
+
 .video-container{
 
     width:100%;
@@ -8,9 +14,9 @@
 
     aspect-ratio:16 / 9;
 
-    border-radius:var(--radius-large);
-
     overflow:hidden;
+
+    border-radius:20px;
 
     border:1px solid var(--border-color);
 
@@ -26,6 +32,6 @@
 
     display:block;
 
-    border:0;
+    border:none;
 
 }
